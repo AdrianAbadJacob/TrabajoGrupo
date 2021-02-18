@@ -15,7 +15,10 @@ use App\Http\Controllers\personajeController;
 */
 
 Route::get('/', function () {
-    return view('plantilla');
+    return view('home');
+});
+Route::get('/eventos', function () {
+    return view('eventos');
 });
 
 Route::get('/personajes', [personajeController::class, 'mostrarPersonaje']);
