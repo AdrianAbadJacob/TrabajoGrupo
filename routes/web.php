@@ -16,17 +16,13 @@ use App\Http\Controllers\personajeController;
 Route::get('/', function () {
     return view('home');
 });
-<<<<<<< HEAD
 
 Route::get('/mail', [ContactController::class, 'contact']);
 
 Route::post('/send-message', [ContactController::class, 'sendEmail'])->name('contact.send');
     
-
-=======
 Route::get('/eventos', function () {
     return view('eventos');
 });
 
 Route::get('/personajes', [personajeController::class, 'mostrarPersonaje']);
->>>>>>> main
