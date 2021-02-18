@@ -18,8 +18,14 @@ Route::get('/mail', [
     'contact'
 ]);
 
+<<<<<<< HEAD
 Route::post('/send-message', [
     ContactController::class,
     'sendEmail'
 ])->name('contact.send');
     
+=======
+Route::get('/', function () {
+    return view('plantilla');
+});
+>>>>>>> main
