@@ -1,6 +1,4 @@
-@include('plantilla')
-@include('header')
-@section('mycontent')
+@extends('plantilla')
 <section style="padding-top: 60px">
 	<div class="container">
 		<div class="row">
@@ -41,5 +39,3 @@
 		</div>
 	</div>
 </section>
-@endsection
-@include('footer')

@@ -12,20 +12,12 @@ use Illuminate\Support\Facades\Route;
  * | contains the "web" middleware group. Now create something great!
  * |
  */
-
-Route::get('/mail', [
-    ContactController::class,
-    'contact'
-]);
-
-<<<<<<< HEAD
-Route::post('/send-message', [
-    ContactController::class,
-    'sendEmail'
-])->name('contact.send');
-    
-=======
 Route::get('/', function () {
     return view('plantilla');
 });
->>>>>>> main
+
+Route::get('/mail', [ContactController::class, 'contact']);
+
+Route::post('/send-message', [ContactController::class, 'sendEmail'])->name('contact.send');
+    
+
