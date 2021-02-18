@@ -1,6 +1,7 @@
 <?php
 use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\personajeController;
 
 /*
  * |--------------------------------------------------------------------------
@@ -13,11 +14,19 @@ use Illuminate\Support\Facades\Route;
  * |
  */
 Route::get('/', function () {
-    return view('plantilla');
+    return view('home');
 });
+<<<<<<< HEAD
 
 Route::get('/mail', [ContactController::class, 'contact']);
 
 Route::post('/send-message', [ContactController::class, 'sendEmail'])->name('contact.send');
     
 
+=======
+Route::get('/eventos', function () {
+    return view('eventos');
+});
+
+Route::get('/personajes', [personajeController::class, 'mostrarPersonaje']);
+>>>>>>> main
