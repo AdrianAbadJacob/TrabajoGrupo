@@ -16,3 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('plantilla');
 });
+Route::get('/eventos', function () {
+    return view('eventos');
+});
